@@ -13,4 +13,4 @@ def xmasstree (height = 13):
     print()
 
 
-xmasstree(40)
+xmasstree(38)
