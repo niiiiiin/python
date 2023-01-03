@@ -16,10 +16,9 @@ else:
 dzieci = [artur, nina, mila, tymon]
 
 
-# for d in dzieci:
+# for d in dzieci:  
 #     d=d+100
 #     print(d)
-
 # print(dzieci)
 
 for i in range(len(dzieci)):
