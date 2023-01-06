@@ -14,6 +14,18 @@ def silnia(n):
         temp = temp*(i+1)
     return temp
 
-print(silnia(3))
+# print(silnia(20))
+
+temp=str(silnia(20))
+
+# print(temp)
+tymcz=0
+
+for i in range(len(temp)):
+    tymcz=tymcz+1
+    
+
+print(tymcz)
+
         
     
