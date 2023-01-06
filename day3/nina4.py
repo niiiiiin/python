@@ -1,3 +1,6 @@
+import copy
+
+
 akapit='Statystyki nie pozostawiają złudzeń, że co roku strażacy intensywnie pracują, ratując życie i dobytek ludzi. Nie wszystkie wyjazdy w 2022 r. dotyczyły pożarów (było ich 14 900). To także działania przy miejscowych zagrożeniach (takich interwencji było 26 723), jak wypadki lub usuwanie powalonych drzew. Fałszywych zgłoszeń było 4 017.'
 temp=0
 for i in range(len(akapit)):
@@ -25,7 +28,24 @@ for i in range(len(temp)):
     tymcz=tymcz+1
     
 
-print(tymcz)
+# print(tymcz)
+
+
+lista=[]
+
+for i in range(5):
+    lista.append(i+120)
+    # if lista[i]%3==0:
+        # print(lista[i])
+    lista[i]=str(lista[i])
+    lista[i]=list(lista[i])
+    temp=[]
+    for j in range(3):
+        temp.append(lista[i][-j-1])
+    lista[i]=list.copy(temp)
+
+print(lista)
+
 
         
     
