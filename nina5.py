@@ -29,4 +29,52 @@ for i in range(len(list1)):
 
 
 
-print(list1)
+# print(list1)
+
+
+# sortowanie
+
+ls = [2, 7, 9, 15, 24, 5]
+temp = 0
+for i in range(len(ls)):
+    for j in range(i, len(ls)):
+        if ls[i]>ls[j]:
+            temp = ls[j]
+            ls[j] = ls[i]
+            ls[i] = temp
+
+
+# print(ls)
+
+# wczytywanie i zmiana pliku
+
+f = open("data.txt", "r")
+# print(f.read())
+
+lista = []
+
+for i in f:
+    lista.append(i)
+
+
+
+for i in range(len(lista)):
+    lista[i] = lista[i].strip("\n")
+
+lista.append("wino")
+lista.append("kwiaty")
+lista.append("mydlo")
+lista.append("jajka")
+
+# lista = str(lista)
+# print(lista)
+
+
+f = open("data.txt", "w")
+for i in range(len(lista)):
+    f.write(lista[i]+"\n")
+f.close()
+
+
+f = open("data.txt", "r")
+print(f.read())
